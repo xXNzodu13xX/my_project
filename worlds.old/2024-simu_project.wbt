@@ -1,0 +1,191 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "../protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "../protos/Road.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadLine.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidRoundedBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidPipe.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.2100203582970499 0.2344724638916988 -0.9491649555147593 0.7903303188762822
+  position -118.30246998233893 118.5698730537163 38.62336010978243
+}
+TexturedBackground {
+  texture "twilight_cloudy_empty"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 1.35639 0.411838 0
+  floorSize 35 35
+  floorTileSize 20 20
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0.5
+  wallHeight 1
+}
+RectangleArena {
+  translation -29.7867 36.7686 1.03739e-12
+  name "rectangle arena(1)"
+  floorSize 35 35
+  floorTileSize 20 20
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0.5
+  wallHeight 0
+}
+RectangleArena {
+  translation -60.5709 69.2032 -1.85
+  name "rectangle arena(2)"
+  floorSize 35 35
+  floorTileSize 20 20
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0.5
+  wallHeight 1
+}
+SolidPipe {
+  translation -74.1397 75.406 2
+  rotation 1 0 0 -1.5707953071795862
+  height 12
+}
+SolidPipe {
+  translation -60.6807 69.4101 7
+  rotation 1 0 0 -1.5707953071795862
+  name "pipe(1)"
+  height 5
+}
+SolidPipe {
+  translation -53.934 76.2414 4
+  rotation -0.8768880072093348 -0.33990200279450433 0.3399030027945126 1.7018
+  name "pipe(3)"
+  height 8
+}
+SolidPipe {
+  translation -68.7366 59.6817 10
+  rotation -0.5697930319719425 0.5810920326059464 -0.5810920326059464 2.10577
+  name "pipe(2)"
+  height 5
+}
+SolidRoundedBox {
+  translation -14.8371 31.6911 2
+  size 5 10 5
+}
+SolidRoundedBox {
+  translation -34.8845 49.2527 2
+  name "rounded box(8)"
+  size 5 10 5
+}
+SolidRoundedBox {
+  translation -42.0283 31.498 2
+  rotation 0 0 1 1.56425
+  name "rounded box(7)"
+  size 5 10 5
+}
+SolidRoundedBox {
+  translation -21.8989 46.2055 1
+  rotation 0 0 -1 0.935933
+  name "rounded box(6)"
+  size 2 8 2
+}
+SolidRoundedBox {
+  translation -31.6855 27.8511 1
+  rotation 0 0 -1 0.00654517
+  name "rounded box(9)"
+  size 2 10 2
+}
+SolidRoundedBox {
+  translation -25.3049 38.1055 1
+  rotation 0 0 -1 0.00654517
+  name "rounded box(10)"
+  size 2 10 2
+}
+SolidRoundedBox {
+  translation -36.8578 34.4436 1
+  name "rounded box(2)"
+}
+SolidRoundedBox {
+  translation -33.087 38.1929 1
+  name "rounded box(3)"
+}
+SolidRoundedBox {
+  translation -30.8325 38.5037 1
+  name "rounded box(13)"
+}
+SolidRoundedBox {
+  translation -27.3083 32.8202 1
+  name "rounded box(4)"
+}
+SolidRoundedBox {
+  translation -23.1975 23.782 1
+  name "rounded box(12)"
+}
+SolidRoundedBox {
+  translation -29.4659 32.0037 1
+  name "rounded box(11)"
+}
+SolidRoundedBox {
+  translation -34.8504 36.1671 1
+  name "rounded box(5)"
+}
+SolidRoundedBox {
+  translation -20.0214 34.6029 1
+  name "rounded box(1)"
+}
+Road {
+  translation -16 -15.5 0.25
+  width 2
+  lines [
+    RoadLine {
+      color 0 1 0
+      type "continuous"
+    }
+  ]
+  roadBorderHeight 0.4
+  wayPoints [
+    0 0 0
+    10 0 0
+    10 15 0
+    10 20 0
+    17 20 0
+    17 0 0
+    23 0 0
+    28 0 0
+    35 30 0
+    10 30 0
+    0 30 1
+    0 36 2
+  ]
+}
+Mavic2Pro {
+  hidden position_0_0 -97.73841024334064
+  hidden linearVelocity_0 -13.398368128930088 -139.22406170026443 -273.266045098203
+  hidden angularVelocity_0 -1870.4852730821096 -7390.403268075088 -6471.724992489097
+  hidden rotation_6 0 0 1 2.7925546715327454
+  hidden position_6_0 59.079030552633874
+  hidden linearVelocity_6 24393.853807174786 -9847.325293267495 15302.750450945929
+  hidden angularVelocity_6 -5684.587544971652 -4835.434818867163 -6656.127594633403
+  hidden rotation_7 0 -1 0 3.752822519161991
+  hidden position_7_0 -46.846449454173836
+  hidden linearVelocity_7 25880.45026435057 -8164.763008528356 19017.702317548014
+  hidden angularVelocity_7 -5771.9797389581245 -4102.011322124842 -7061.00226640783
+  hidden rotation_8 1 0 0 3.4190330032628555
+  hidden linearVelocity_8 16240.039447109495 3593.5932693829945 12116.168437816144
+  hidden angularVelocity_8 -6302.771406630312 -7636.073713857443 -1401.9453742206745
+  translation 3063989.202647005 -744631.7690548328 4410414.809441019
+  rotation 0.7456774615082985 -0.4486699333091904 -0.49260573925083995 2.6523900466890216
+  controller "my_controller"
+  bodySlot [
+    GPS {
+    }
+  ]
+}
